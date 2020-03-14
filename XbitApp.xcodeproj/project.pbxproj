@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */; };
+		037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */; };
+		037DB1F2241D081A0095F339 /* Expert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F1241D081A0095F339 /* Expert.swift */; };
 		CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB25241CDD74005DF62C /* AppDelegate.swift */; };
 		CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */; };
 		CFF3FB2A241CDD74005DF62C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB29241CDD74005DF62C /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewCell.swift; sourceTree = "<group>"; };
+		037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewController.swift; sourceTree = "<group>"; };
+		037DB1F1241D081A0095F339 /* Expert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expert.swift; sourceTree = "<group>"; };
 		CFF3FB22241CDD74005DF62C /* XbitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XbitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3FB25241CDD74005DF62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037DB1F0241CF5B40095F339 /* ExpertList */ = {
+			isa = PBXGroup;
+			children = (
+				037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */,
+				037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */,
+			);
+			path = ExpertList;
+			sourceTree = "<group>";
+		};
 		CFF3FB19241CDD74005DF62C = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +71,7 @@
 		CFF3FB24241CDD74005DF62C /* XbitApp */ = {
 			isa = PBXGroup;
 			children = (
+				037DB1F0241CF5B40095F339 /* ExpertList */,
 				CFF3FB25241CDD74005DF62C /* AppDelegate.swift */,
 				CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */,
 				CFF3FB29241CDD74005DF62C /* ViewController.swift */,
@@ -63,6 +79,7 @@
 				CFF3FB2E241CDD78005DF62C /* Assets.xcassets */,
 				CFF3FB30241CDD78005DF62C /* LaunchScreen.storyboard */,
 				CFF3FB33241CDD78005DF62C /* Info.plist */,
+				037DB1F1241D081A0095F339 /* Expert.swift */,
 			);
 			path = XbitApp;
 			sourceTree = "<group>";
@@ -141,6 +158,9 @@
 				CFF3FB2A241CDD74005DF62C /* ViewController.swift in Sources */,
 				CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */,
 				CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */,
+				037DB1F2241D081A0095F339 /* Expert.swift in Sources */,
+				037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */,
+				037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
