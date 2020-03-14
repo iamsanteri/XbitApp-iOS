@@ -14,11 +14,13 @@ class Expert {
     var phoneNumber: String
     var email: String
     var photo: UIImage?
+    var skills: [Skill]?
     
-    init(name: String, phoneNumber: String, email: String, photo: UIImage?) {
+    init(name: String, phoneNumber: String, email: String, photo: UIImage?, skills: [Skill]?) {
         self.name = name
         self.phoneNumber = phoneNumber
         self.email = email
         self.photo = photo
+        self.skills = skills
     }
 }
