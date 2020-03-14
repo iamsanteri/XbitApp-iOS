@@ -29,11 +29,16 @@ class ExpertTableViewController: UITableViewController {
     }
     
     private func loadSampleExperts() {
-        let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com")
+        let david = UIImage(named: "david")
+        let daniel = UIImage(named: "daniel")
+        let max = UIImage(named: "max")
         
-        let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com")
         
-        let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com")
+        let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com", photo: david)
+        
+        let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com", photo: daniel)
+        
+        let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com", photo: max)
         
         experts += [expert1, expert2, expert3]
     }
@@ -45,11 +50,14 @@ class ExpertTableViewController: UITableViewController {
             fatalError()
         }
         
+        // Making images round
+        cell.photoImageView.layer.masksToBounds = true
+        cell.photoImageView.layer.cornerRadius = cell.photoImageView.bounds.width / 2
+        
         cell.nameLabel.text = experts[indexPath.row].name
         cell.phoneNumberLabel.text = experts[indexPath.row].phoneNumber
         cell.emailLabel.text = experts[indexPath.row].email
-        // Implement later
-        //cell.photoImageView = experts[indexPath.row].photo
+        cell.photoImageView.image = experts[indexPath.row].photo
         
         return cell
     }
