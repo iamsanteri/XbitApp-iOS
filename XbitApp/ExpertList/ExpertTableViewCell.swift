@@ -9,7 +9,7 @@
 import UIKit
 
 class ExpertTableViewCell: UITableViewCell {
-
+    
     //MARK:- Outlets
     
     @IBOutlet weak var photoImageView: UIImageView!
@@ -24,11 +24,23 @@ class ExpertTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
+    func setup(with expert: Expert) {
+        // Making images round
+        photoImageView.layer.masksToBounds = true
+        photoImageView.layer.cornerRadius = photoImageView.bounds.width / 2
+        
+        nameLabel.text = expert.name
+        phoneNumberLabel.text = expert.phoneNumber
+        emailLabel.text = expert.email
+        photoImageView.image = expert.photo
+        self.selectionStyle = .none
+    }
+    
 }
