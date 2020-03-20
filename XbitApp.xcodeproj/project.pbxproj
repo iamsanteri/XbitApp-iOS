@@ -10,9 +10,10 @@
 		037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */; };
 		037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */; };
 		037DB1F2241D081A0095F339 /* Expert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F1241D081A0095F339 /* Expert.swift */; };
+		037DB1F5241D2BED0095F339 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F4241D2BED0095F339 /* Skill.swift */; };
 		CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB25241CDD74005DF62C /* AppDelegate.swift */; };
 		CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */; };
-		CFF3FB2A241CDD74005DF62C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB29241CDD74005DF62C /* ViewController.swift */; };
+		CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB29241CDD74005DF62C /* DetailViewController.swift */; };
 		CFF3FB2D241CDD74005DF62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF3FB2B241CDD74005DF62C /* Main.storyboard */; };
 		CFF3FB2F241CDD78005DF62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF3FB2E241CDD78005DF62C /* Assets.xcassets */; };
 		CFF3FB32241CDD78005DF62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF3FB30241CDD78005DF62C /* LaunchScreen.storyboard */; };
@@ -22,10 +23,11 @@
 		037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewCell.swift; sourceTree = "<group>"; };
 		037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewController.swift; sourceTree = "<group>"; };
 		037DB1F1241D081A0095F339 /* Expert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expert.swift; sourceTree = "<group>"; };
+		037DB1F4241D2BED0095F339 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		CFF3FB22241CDD74005DF62C /* XbitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XbitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3FB25241CDD74005DF62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFF3FB29241CDD74005DF62C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFF3FB29241CDD74005DF62C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CFF3FB2C241CDD74005DF62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFF3FB2E241CDD78005DF62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFF3FB31241CDD78005DF62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +54,23 @@
 			path = ExpertList;
 			sourceTree = "<group>";
 		};
+		037DB1F3241D2BBB0095F339 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				037DB1F1241D081A0095F339 /* Expert.swift */,
+				037DB1F4241D2BED0095F339 /* Skill.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		037DB1F6241D2DF40095F339 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				CFF3FB29241CDD74005DF62C /* DetailViewController.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 		CFF3FB19241CDD74005DF62C = {
 			isa = PBXGroup;
 			children = (
@@ -71,15 +90,15 @@
 		CFF3FB24241CDD74005DF62C /* XbitApp */ = {
 			isa = PBXGroup;
 			children = (
+				037DB1F6241D2DF40095F339 /* DetailView */,
+				037DB1F3241D2BBB0095F339 /* Models */,
 				037DB1F0241CF5B40095F339 /* ExpertList */,
 				CFF3FB25241CDD74005DF62C /* AppDelegate.swift */,
 				CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */,
-				CFF3FB29241CDD74005DF62C /* ViewController.swift */,
 				CFF3FB2B241CDD74005DF62C /* Main.storyboard */,
 				CFF3FB2E241CDD78005DF62C /* Assets.xcassets */,
 				CFF3FB30241CDD78005DF62C /* LaunchScreen.storyboard */,
 				CFF3FB33241CDD78005DF62C /* Info.plist */,
-				037DB1F1241D081A0095F339 /* Expert.swift */,
 			);
 			path = XbitApp;
 			sourceTree = "<group>";
@@ -155,7 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF3FB2A241CDD74005DF62C /* ViewController.swift in Sources */,
+				037DB1F5241D2BED0095F339 /* Skill.swift in Sources */,
+				CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */,
 				CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */,
 				CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */,
 				037DB1F2241D081A0095F339 /* Expert.swift in Sources */,

@@ -34,11 +34,11 @@ class ExpertTableViewController: UITableViewController {
         let max = UIImage(named: "max")
         
         
-        let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com", photo: david)
+        let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com", photo: david, skills: nil)
         
-        let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com", photo: daniel)
+        let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com", photo: daniel, skills: nil)
         
-        let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com", photo: max)
+        let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com", photo: max, skills: nil)
         
         experts += [expert1, expert2, expert3]
     }
@@ -49,15 +49,9 @@ class ExpertTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? ExpertTableViewCell else {
             fatalError()
         }
-        
-        // Making images round
-        cell.photoImageView.layer.masksToBounds = true
-        cell.photoImageView.layer.cornerRadius = cell.photoImageView.bounds.width / 2
-        
-        cell.nameLabel.text = experts[indexPath.row].name
-        cell.phoneNumberLabel.text = experts[indexPath.row].phoneNumber
-        cell.emailLabel.text = experts[indexPath.row].email
-        cell.photoImageView.image = experts[indexPath.row].photo
+    
+        let expert = experts[indexPath.row]
+        cell.setup(with: expert)
         
         return cell
     }
