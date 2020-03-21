@@ -11,6 +11,9 @@
 		037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */; };
 		037DB1F2241D081A0095F339 /* Expert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F1241D081A0095F339 /* Expert.swift */; };
 		037DB1F5241D2BED0095F339 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F4241D2BED0095F339 /* Skill.swift */; };
+		CFAA96F424268F5500BDBC47 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */; };
+		CFAA96F62426903200BDBC47 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F52426903200BDBC47 /* Request.swift */; };
+		CFAB3CAF2426875D007B6A96 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */; };
 		CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB25241CDD74005DF62C /* AppDelegate.swift */; };
 		CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */; };
 		CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB29241CDD74005DF62C /* DetailViewController.swift */; };
@@ -24,6 +27,9 @@
 		037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewController.swift; sourceTree = "<group>"; };
 		037DB1F1241D081A0095F339 /* Expert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expert.swift; sourceTree = "<group>"; };
 		037DB1F4241D2BED0095F339 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
+		CFAA96F52426903200BDBC47 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
 		CFF3FB22241CDD74005DF62C /* XbitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XbitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3FB25241CDD74005DF62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				037DB1F1241D081A0095F339 /* Expert.swift */,
+				CFAA96F52426903200BDBC47 /* Request.swift */,
 				037DB1F4241D2BED0095F339 /* Skill.swift */,
 			);
 			path = Models;
@@ -69,6 +76,15 @@
 				CFF3FB29241CDD74005DF62C /* DetailViewController.swift */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		CFAB3CAD24268563007B6A96 /* RequestList */ = {
+			isa = PBXGroup;
+			children = (
+				CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */,
+				CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */,
+			);
+			path = RequestList;
 			sourceTree = "<group>";
 		};
 		CFF3FB19241CDD74005DF62C = {
@@ -90,6 +106,7 @@
 		CFF3FB24241CDD74005DF62C /* XbitApp */ = {
 			isa = PBXGroup;
 			children = (
+				CFAB3CAD24268563007B6A96 /* RequestList */,
 				037DB1F6241D2DF40095F339 /* DetailView */,
 				037DB1F3241D2BBB0095F339 /* Models */,
 				037DB1F0241CF5B40095F339 /* ExpertList */,
@@ -175,10 +192,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				037DB1F5241D2BED0095F339 /* Skill.swift in Sources */,
+				CFAB3CAF2426875D007B6A96 /* RequestTableViewCell.swift in Sources */,
 				CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */,
 				CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */,
+				CFAA96F424268F5500BDBC47 /* RequestTableViewController.swift in Sources */,
 				CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */,
 				037DB1F2241D081A0095F339 /* Expert.swift in Sources */,
+				CFAA96F62426903200BDBC47 /* Request.swift in Sources */,
 				037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */,
 				037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */,
 			);
