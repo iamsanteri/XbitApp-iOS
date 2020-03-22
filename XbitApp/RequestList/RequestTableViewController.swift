@@ -16,6 +16,7 @@ class RequestTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView(frame: .zero)
         loadSampleRequests()
     }
 
@@ -40,9 +41,7 @@ class RequestTableViewController: UITableViewController {
         
         cell.requestTitleLabel.text = request.title
         cell.requestBodyLabel.text = request.request
-        
-        // If model changes and we include an image this needs to be configured below
-        // cell.photoImageView.image = request.photo
+        cell.requestImage.image = request.image
 
         return cell
     }
@@ -95,8 +94,8 @@ class RequestTableViewController: UITableViewController {
     
     private func loadSampleRequests() {
         
-        let request1 = Request(title: "Title of my outgoing request", request: "These are the first few lines of my request...")
-        let request2 = Request(title: "Title of my incoming request", request: "This is an incoming request for you to answer...")
+        let request1 = Request(title: "Title of my outgoing request", request: "These are the first few lines of my request...", image: #imageLiteral(resourceName: "upload"))
+        let request2 = Request(title: "Title of my incoming request", request: "This is an incoming request for you to answer...", image: #imageLiteral(resourceName: "download"))
         
         requests += [request1, request2]
 

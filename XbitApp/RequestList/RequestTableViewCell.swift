@@ -17,6 +17,8 @@ class RequestTableViewCell: UITableViewCell {
     
     @IBOutlet weak var requestBodyLabel: UILabel!
     
+    @IBOutlet weak var requestImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,6 +28,13 @@ class RequestTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setup(request: Request) {
+        requestImage.image = request.image
+        requestTitleLabel.text = request.title
+        requestBodyLabel.text = request.request
+        self.selectionStyle = .none
     }
 
 }
