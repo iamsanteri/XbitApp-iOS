@@ -38,8 +38,8 @@ class RequestTableViewController: UITableViewController {
         
         let request = requests[indexPath.row]
         
-        cell.requestTitle.text = request.title
-        cell.requestBody.text = request.request
+        cell.requestTitleLabel.text = request.title
+        cell.requestBodyLabel.text = request.request
         
         // If model changes and we include an image this needs to be configured below
         // cell.photoImageView.image = request.photo

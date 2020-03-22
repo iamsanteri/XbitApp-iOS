@@ -12,10 +12,10 @@ class RequestTableViewCell: UITableViewCell {
     
     //MARK: Properties
     
-    @IBOutlet weak var requestTitle: UILabel!
     
-    @IBOutlet weak var requestBody: UILabel!
+    @IBOutlet weak var requestTitleLabel: UILabel!
     
+    @IBOutlet weak var requestBodyLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
