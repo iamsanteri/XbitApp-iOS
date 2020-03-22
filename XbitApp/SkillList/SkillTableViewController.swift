@@ -1,23 +1,23 @@
 //
-//  ExpertTableViewController.swift
+//  SkillTableViewController.swift
 //  XbitApp
 //
-//  Created by Erik Kellenter on 14.03.20.
+//  Created by Erik Kellenter on 21.03.20.
 //  Copyright © 2020 xbit-ios. All rights reserved.
 //
 
 import UIKit
 
-class ExpertTableViewController: UITableViewController {
+class SkillTableViewController: UITableViewController {
     
-    var experts = [Expert]()
+    var skills = [Skill]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.tableFooterView = UIView(frame: .zero)
-        
-        loadSampleExperts()
+
+       loadSampleSkills()
     }
 
     // MARK: - Table view data source
@@ -27,34 +27,29 @@ class ExpertTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return experts.count
+        return skills.count
     }
     
-    private func loadSampleExperts() {
-        let david = UIImage(named: "david")
-        let daniel = UIImage(named: "daniel")
-        let max = UIImage(named: "max")
+    func loadSampleSkills() {
         
+        let skill1 = Skill(skill: "Swift", image: #imageLiteral(resourceName: "swift"))
+        let skill2 = Skill(skill: "Java", image: #imageLiteral(resourceName: "java"))
+        let skill3 = Skill(skill: "iOS", image: #imageLiteral(resourceName: "iOS"))
+        let skill4 = Skill(skill: "Android", image: #imageLiteral(resourceName: "android"))
         
-        let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com", photo: david, skills: nil)
-        
-        let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com", photo: daniel, skills: nil)
-        
-        let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com", photo: max, skills: nil)
-        
-        experts += [expert1, expert2, expert3]
+        skills += [skill1, skill2, skill3, skill4]
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let identifier = "ExpertCellIdentifier"
+        let identifier = "SkillCellIdentifier"
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? ExpertTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? SkillTableViewCell else {
             fatalError()
         }
-    
-        let expert = experts[indexPath.row]
-        cell.setup(with: expert)
         
+        let skill = skills[indexPath.row]
+        cell.setup(skill: skill)
+
         return cell
     }
 

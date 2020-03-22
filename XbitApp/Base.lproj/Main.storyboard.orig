@@ -413,12 +413,15 @@
         <image name="communication_grey" width="35" height="31"/>
         <image name="contact" width="34" height="36"/>
         <image name="contact_grey" width="34" height="36"/>
+<<<<<<< HEAD
         <image name="david" width="30" height="30"/>
         <image name="frankfurt" width="512" height="384"/>
         <image name="mail" width="43" height="28"/>
         <image name="phone_receiver" width="30" height="39"/>
         <image name="schedule" width="41" height="48"/>
+=======
         <image name="swift" width="21" height="21.5"/>
+>>>>>>> Implement Skill List
         <image name="trophy" width="37" height="39"/>
         <image name="trophy_grey" width="37" height="39"/>
     </resources>
