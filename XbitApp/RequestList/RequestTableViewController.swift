@@ -22,24 +22,31 @@ class RequestTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return requests.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cellIdentifier = "RequestTableViewCell"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? RequestTableViewCell else {
+            fatalError("The dequeued cell is not an instance of RequestTableViewCell")
+        }
+        
+        let request = requests[indexPath.row]
+        
+        cell.requestTitle.text = request.title
+        cell.requestBody.text = request.request
+        
+        // If model changes and we include an image this needs to be configured below
+        // cell.photoImageView.image = request.photo
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -92,10 +99,7 @@ class RequestTableViewController: UITableViewController {
         let request2 = Request(title: "Title of my incoming request", request: "This is an incoming request for you to answer...")
         
         requests += [request1, request2]
-        
-//        guard let meal1 = Meal(name: "Caprese Salad", photo: photo1, rating: 4) else {
-//            fatalError("Unable to instantiate meal1")
-//        }
+
     }
 
 }

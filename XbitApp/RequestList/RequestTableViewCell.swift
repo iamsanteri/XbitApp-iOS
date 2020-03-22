@@ -11,9 +11,11 @@ import UIKit
 class RequestTableViewCell: UITableViewCell {
     
     //MARK: Properties
-    @IBOutlet var requestTitle: UILabel!
-    @IBOutlet var photoImageView: UIImageView!
-    @IBOutlet var requestPreview: UILabel!
+    
+    @IBOutlet weak var requestTitle: UILabel!
+    
+    @IBOutlet weak var requestBody: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
