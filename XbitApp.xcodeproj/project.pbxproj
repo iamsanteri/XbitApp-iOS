@@ -11,6 +11,8 @@
 		037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */; };
 		037DB1F2241D081A0095F339 /* Expert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F1241D081A0095F339 /* Expert.swift */; };
 		037DB1F5241D2BED0095F339 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F4241D2BED0095F339 /* Skill.swift */; };
+		03959F4F24265BA200CC8D98 /* SkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */; };
+		03959F5124265BC900CC8D98 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */; };
 		CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB25241CDD74005DF62C /* AppDelegate.swift */; };
 		CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */; };
 		CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB29241CDD74005DF62C /* DetailViewController.swift */; };
@@ -24,6 +26,8 @@
 		037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewController.swift; sourceTree = "<group>"; };
 		037DB1F1241D081A0095F339 /* Expert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expert.swift; sourceTree = "<group>"; };
 		037DB1F4241D2BED0095F339 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewController.swift; sourceTree = "<group>"; };
+		03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
 		CFF3FB22241CDD74005DF62C /* XbitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XbitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3FB25241CDD74005DF62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 			path = DetailView;
 			sourceTree = "<group>";
 		};
+		03959F4D24265B5F00CC8D98 /* SkillList */ = {
+			isa = PBXGroup;
+			children = (
+				03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */,
+				03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */,
+			);
+			path = SkillList;
+			sourceTree = "<group>";
+		};
 		CFF3FB19241CDD74005DF62C = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +103,7 @@
 		CFF3FB24241CDD74005DF62C /* XbitApp */ = {
 			isa = PBXGroup;
 			children = (
+				03959F4D24265B5F00CC8D98 /* SkillList */,
 				037DB1F6241D2DF40095F339 /* DetailView */,
 				037DB1F3241D2BBB0095F339 /* Models */,
 				037DB1F0241CF5B40095F339 /* ExpertList */,
@@ -180,7 +194,9 @@
 				CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */,
 				037DB1F2241D081A0095F339 /* Expert.swift in Sources */,
 				037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */,
+				03959F5124265BC900CC8D98 /* SkillTableViewCell.swift in Sources */,
 				037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */,
+				03959F4F24265BA200CC8D98 /* SkillTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

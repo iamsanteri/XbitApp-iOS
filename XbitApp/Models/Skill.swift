@@ -7,13 +7,21 @@
 //
 
 import Foundation
+import UIKit
 
 class Skill {
-    var skill: String
-    var level: Int
+    var skillName: String
+    var level: Int?
+    var image: UIImage?
     
-    init(skill: String, level: Int) {
-        self.skill = skill
+    init(skill: String, level: Int?, image: UIImage?) {
+        self.skillName = skill
         self.level = level
+        self.image = image
+    }
+    
+    init(skill: String, image: UIImage?) {
+        self.skillName = skill
+        self.image = image
     }
 }
