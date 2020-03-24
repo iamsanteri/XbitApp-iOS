@@ -19,6 +19,32 @@ class ExpertTableViewController: UITableViewController {
         
         loadSampleExperts()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "ShowDetail":
+            guard let detailViewController = segue.destination as? DetailViewController else {
+                fatalError()
+                return
+            }
+            
+            guard let selectedExpertCell = sender as? ExpertTableViewCell else {
+                fatalError()
+                return
+            }
+            
+            guard let selectedIndex = tableView.indexPath(for: selectedExpertCell) else {
+                fatalError()
+                return
+            }
+            
+            let selectedExpert = experts[selectedIndex.row]
+            detailViewController.expert = selectedExpert
+            
+        default:
+            fatalError()
+        }
+    }
 
     // MARK: - Table view data source
 

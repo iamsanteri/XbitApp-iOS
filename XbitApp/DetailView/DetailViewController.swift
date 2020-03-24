@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    var expert: Expert?
+    
     @IBOutlet var coverImage: UIImageView!
     
     @IBOutlet var phoneImage: UIImageView!
@@ -23,6 +25,10 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        
+        if let expert = expert {
+            print(expert.name)
+        }
         
         // Do any additional setup after loading the view.
         profileImage.layer.masksToBounds = true
