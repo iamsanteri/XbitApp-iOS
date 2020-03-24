@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034BC08F242A0B7C00F6D62E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BC08E242A0B7C00F6D62E /* RatingView.swift */; };
 		037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */; };
 		037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */; };
 		037DB1F2241D081A0095F339 /* Expert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F1241D081A0095F339 /* Expert.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034BC08E242A0B7C00F6D62E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewCell.swift; sourceTree = "<group>"; };
 		037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewController.swift; sourceTree = "<group>"; };
 		037DB1F1241D081A0095F339 /* Expert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expert.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				CFF3FB29241CDD74005DF62C /* DetailViewController.swift */,
+				034BC08E242A0B7C00F6D62E /* RatingView.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				037DB1F5241D2BED0095F339 /* Skill.swift in Sources */,
 				CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */,
 				CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */,
+				034BC08F242A0B7C00F6D62E /* RatingView.swift in Sources */,
 				CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */,
 				037DB1F2241D081A0095F339 /* Expert.swift in Sources */,
 				037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */,
