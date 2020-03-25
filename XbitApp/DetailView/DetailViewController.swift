@@ -26,6 +26,9 @@ class DetailViewController: UIViewController {
 
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+                
         if let expert = expert {
             print(expert.name)
         }
@@ -50,8 +53,5 @@ class DetailViewController: UIViewController {
         image.layer.borderWidth = CGFloat(circleBorder)
         image.layer.borderColor = UIColor.systemOrange.cgColor
     }
-    
-    
-    
 }
 
