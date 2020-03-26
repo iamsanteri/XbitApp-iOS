@@ -24,4 +24,9 @@ class Skill {
         self.skillName = skill
         self.image = image
     }
+    
+    init(skill: String, level: Int) {
+        self.skillName = skill
+        self.level = level
+    }
 }

@@ -72,8 +72,8 @@ class DetailViewController: UIViewController {
                 skill1RatingView.isHidden = false
                 skill2RatingView.isHidden = true
                 skill3RatingView.isHidden = true
-                skill1Label.text = expert.skills![0].skill
-                skill1RatingView.rating = expert.skills![0].level
+                skill1Label.text = expert.skills![0].skillName
+                skill1RatingView.rating = expert.skills![0].level!
             case 2:
                 skill1Label.isHidden = false
                 skill2Label.isHidden = false
@@ -81,10 +81,10 @@ class DetailViewController: UIViewController {
                 skill1RatingView.isHidden = false
                 skill2RatingView.isHidden = false
                 skill3RatingView.isHidden = true
-                skill1Label.text = expert.skills![0].skill
-                skill1RatingView.rating = expert.skills![0].level
-                skill2Label.text = expert.skills![1].skill
-                skill2RatingView.rating = expert.skills![1].level
+                skill1Label.text = expert.skills![0].skillName
+                skill1RatingView.rating = expert.skills![0].level!
+                skill2Label.text = expert.skills![1].skillName
+                skill2RatingView.rating = expert.skills![1].level!
             case 3:
                 skill1Label.isHidden = false
                 skill2Label.isHidden = false
@@ -92,12 +92,12 @@ class DetailViewController: UIViewController {
                 skill1RatingView.isHidden = false
                 skill2RatingView.isHidden = false
                 skill3RatingView.isHidden = false
-                skill1Label.text = expert.skills![0].skill
-                skill1RatingView.rating = expert.skills![0].level
-                skill2Label.text = expert.skills![1].skill
-                skill2RatingView.rating = expert.skills![1].level
-                skill3Label.text = expert.skills![2].skill
-                skill3RatingView.rating = expert.skills![2].level
+                skill1Label.text = expert.skills![0].skillName
+                skill1RatingView.rating = expert.skills![0].level!
+                skill2Label.text = expert.skills![1].skillName
+                skill2RatingView.rating = expert.skills![1].level!
+                skill3Label.text = expert.skills![2].skillName
+                skill3RatingView.rating = expert.skills![2].level!
             default:
                 skill1Label.isHidden = false
                 skill2Label.isHidden = false
@@ -105,12 +105,12 @@ class DetailViewController: UIViewController {
                 skill1RatingView.isHidden = false
                 skill2RatingView.isHidden = false
                 skill3RatingView.isHidden = false
-                skill1Label.text = expert.skills![0].skill
-                skill1RatingView.rating = expert.skills![0].level
-                skill1Label.text = expert.skills![1].skill
-                skill1RatingView.rating = expert.skills![1].level
-                skill1Label.text = expert.skills![2].skill
-                skill1RatingView.rating = expert.skills![2].level
+                skill1Label.text = expert.skills![0].skillName
+                skill1RatingView.rating = expert.skills![0].level!
+                skill1Label.text = expert.skills![1].skillName
+                skill1RatingView.rating = expert.skills![1].level!
+                skill1Label.text = expert.skills![2].skillName
+                skill1RatingView.rating = expert.skills![2].level!
             }
         }
     }
