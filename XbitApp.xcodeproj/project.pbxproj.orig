@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		034BC08F242A0B7C00F6D62E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BC08E242A0B7C00F6D62E /* RatingView.swift */; };
 		037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */; };
 		037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */; };
 		037DB1F2241D081A0095F339 /* Expert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F1241D081A0095F339 /* Expert.swift */; };
 		037DB1F5241D2BED0095F339 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F4241D2BED0095F339 /* Skill.swift */; };
-		03959F4F24265BA200CC8D98 /* SkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */; };
-		03959F5124265BC900CC8D98 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */; };
+<<<<<<< HEAD
 		CFAA96F424268F5500BDBC47 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */; };
 		CFAA96F62426903200BDBC47 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F52426903200BDBC47 /* Request.swift */; };
 		CFAB3CAF2426875D007B6A96 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */; };
+=======
+		03959F4F24265BA200CC8D98 /* SkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */; };
+		03959F5124265BC900CC8D98 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */; };
+>>>>>>> master
 		CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB25241CDD74005DF62C /* AppDelegate.swift */; };
 		CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */; };
 		CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB29241CDD74005DF62C /* DetailViewController.swift */; };
@@ -26,16 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		034BC08E242A0B7C00F6D62E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewCell.swift; sourceTree = "<group>"; };
 		037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewController.swift; sourceTree = "<group>"; };
 		037DB1F1241D081A0095F339 /* Expert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expert.swift; sourceTree = "<group>"; };
 		037DB1F4241D2BED0095F339 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
-		03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewController.swift; sourceTree = "<group>"; };
-		03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		CFAA96F52426903200BDBC47 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+=======
+		03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewController.swift; sourceTree = "<group>"; };
+		03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
+>>>>>>> master
 		CFF3FB22241CDD74005DF62C /* XbitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XbitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3FB25241CDD74005DF62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,11 +84,19 @@
 			isa = PBXGroup;
 			children = (
 				CFF3FB29241CDD74005DF62C /* DetailViewController.swift */,
-				034BC08E242A0B7C00F6D62E /* RatingView.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+		CFAB3CAD24268563007B6A96 /* RequestList */ = {
+			isa = PBXGroup;
+			children = (
+				CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */,
+				CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */,
+			);
+			path = RequestList;
+=======
 		03959F4D24265B5F00CC8D98 /* SkillList */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,15 +104,7 @@
 				03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */,
 			);
 			path = SkillList;
-			sourceTree = "<group>";
-		};
-		CFAB3CAD24268563007B6A96 /* RequestList */ = {
-			isa = PBXGroup;
-			children = (
-				CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */,
-				CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */,
-			);
-			path = RequestList;
+>>>>>>> master
 			sourceTree = "<group>";
 		};
 		CFF3FB19241CDD74005DF62C = {
@@ -122,8 +126,11 @@
 		CFF3FB24241CDD74005DF62C /* XbitApp */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				CFAB3CAD24268563007B6A96 /* RequestList */,
+=======
 				03959F4D24265B5F00CC8D98 /* SkillList */,
+>>>>>>> master
 				037DB1F6241D2DF40095F339 /* DetailView */,
 				037DB1F3241D2BBB0095F339 /* Models */,
 				037DB1F0241CF5B40095F339 /* ExpertList */,
@@ -213,7 +220,6 @@
 				CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */,
 				CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */,
 				CFAA96F424268F5500BDBC47 /* RequestTableViewController.swift in Sources */,
-				034BC08F242A0B7C00F6D62E /* RatingView.swift in Sources */,
 				CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */,
 				037DB1F2241D081A0095F339 /* Expert.swift in Sources */,
 				CFAA96F62426903200BDBC47 /* Request.swift in Sources */,
