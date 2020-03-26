@@ -76,7 +76,7 @@ class ExpertTableViewController: UITableViewController, UINavigationControllerDe
         let max = UIImage(named: "max")
         
         
-        let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com", photo: david, skills: nil, role: nil)
+        let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com", photo: david, skills: [Skill(skill: "Swift", level: 5), Skill(skill: "iOS", level: 2), Skill(skill: "Scrum", level: 3)], role: "Architect")
         
         let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com", photo: daniel, skills: nil, role: nil)
         

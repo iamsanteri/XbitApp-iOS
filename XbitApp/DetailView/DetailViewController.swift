@@ -10,7 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var expert: Expert? = Expert(name: "David Symhoven", phoneNumber: "1234", email: "david.symhoven@jambit.de", photo: #imageLiteral(resourceName: "david_high_resolution"), skills: [Skill(skill: "Swift", level: 5), Skill(skill: "iOS", level: 2), Skill(skill: "Scrum", level: 3)], role: "Architect")
+//    var expert: Expert? = Expert(name: "David Symhoven", phoneNumber: "1234", email: "david.symhoven@jambit.de", photo: #imageLiteral(resourceName: "david_high_resolution"), skills: [Skill(skill: "Swift", level: 5), Skill(skill: "iOS", level: 2), Skill(skill: "Scrum", level: 3)], role: "Architect")
+    
+    var expert: Expert?
     
     @IBOutlet var coverImage: UIImageView!
     
@@ -44,6 +46,9 @@ class DetailViewController: UIViewController {
         
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
         profileImage.layer.masksToBounds = true
         profileImage.layer.cornerRadius = profileImage.bounds.width / 2
         
@@ -52,6 +57,7 @@ class DetailViewController: UIViewController {
         setupSystemImage(image: scheduleImage)
         
         if let expert = expert {
+            print("Test")
             profileImage.image = expert.photo
             nameLabel.text = expert.name
             roleLabel.text = expert.role
