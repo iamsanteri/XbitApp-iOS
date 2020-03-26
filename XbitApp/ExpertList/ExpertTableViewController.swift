@@ -16,6 +16,8 @@ class ExpertTableViewController: UITableViewController, UINavigationControllerDe
         super.viewDidLoad()
         self.navigationController?.delegate = self
         
+        self.navigationController?.navigationBar.barTintColor = UIColor.systemOrange
+        
         tableView.tableFooterView = UIView(frame: .zero)
         
         loadSampleExperts()
@@ -28,10 +30,11 @@ class ExpertTableViewController: UITableViewController, UINavigationControllerDe
     
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         let item = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        viewController.navigationItem.backBarButtonItem = item
+        self.navigationItem.backBarButtonItem = item
         let emptyImage = UIImage()
         navigationController.navigationBar.backIndicatorImage = emptyImage
         navigationController.navigationBar.backIndicatorTransitionMaskImage = emptyImage
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
