@@ -7,5 +7,6 @@ target 'XbitApp' do
 
   # Pods for XbitApp
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
 
 end
