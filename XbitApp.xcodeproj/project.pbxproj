@@ -14,6 +14,7 @@
 		037DB1F5241D2BED0095F339 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F4241D2BED0095F339 /* Skill.swift */; };
 		03959F4F24265BA200CC8D98 /* SkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */; };
 		03959F5124265BC900CC8D98 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */; };
+		CF3F2DFB242F8C0100AB9481 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF3F2DFA242F8C0100AB9481 /* GoogleService-Info.plist */; };
 		CFAA96F424268F5500BDBC47 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */; };
 		CFAA96F62426903200BDBC47 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F52426903200BDBC47 /* Request.swift */; };
 		CFAB3CAF2426875D007B6A96 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */; };
@@ -33,6 +34,7 @@
 		037DB1F4241D2BED0095F339 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewController.swift; sourceTree = "<group>"; };
 		03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
+		CF3F2DFA242F8C0100AB9481 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		CFAA96F52426903200BDBC47 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				CFF3FB2B241CDD74005DF62C /* Main.storyboard */,
 				CFF3FB2E241CDD78005DF62C /* Assets.xcassets */,
 				CFF3FB30241CDD78005DF62C /* LaunchScreen.storyboard */,
+				CF3F2DFA242F8C0100AB9481 /* GoogleService-Info.plist */,
 				CFF3FB33241CDD78005DF62C /* Info.plist */,
 			);
 			path = XbitApp;
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF3FB32241CDD78005DF62C /* LaunchScreen.storyboard in Resources */,
+				CF3F2DFB242F8C0100AB9481 /* GoogleService-Info.plist in Resources */,
 				CFF3FB2F241CDD78005DF62C /* Assets.xcassets in Resources */,
 				CFF3FB2D241CDD74005DF62C /* Main.storyboard in Resources */,
 			);
