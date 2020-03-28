@@ -78,9 +78,9 @@ class ExpertTableViewController: UITableViewController, UINavigationControllerDe
         
         let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com", photo: david, skills: [Skill(skill: "Swift", level: 5), Skill(skill: "iOS", level: 2), Skill(skill: "Scrum", level: 3)], role: "Architect")
         
-        let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com", photo: daniel, skills: nil, role: nil)
+        let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com", photo: daniel, skills: [], role: nil)
         
-        let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com", photo: max, skills: nil, role: nil)
+        let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com", photo: max, skills: [], role: nil)
         
         experts += [expert1, expert2, expert3]
     }

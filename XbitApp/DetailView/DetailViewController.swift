@@ -58,7 +58,7 @@ class DetailViewController: UIViewController {
         
         if let expert = expert {
             print("Test")
-            profileImage.image = expert.photo
+//            profileImage.image = expert.photo
             nameLabel.text = expert.name
             roleLabel.text = expert.role
             phoneLabel.text = expert.phoneNumber

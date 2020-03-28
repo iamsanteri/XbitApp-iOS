@@ -14,6 +14,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p3o-cR-37u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ExpertCellIdentifier" rowHeight="95" id="0y5-eF-1BX" customClass="ExpertTableViewCell" customModule="XbitApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="95"/>
@@ -168,10 +169,11 @@
         <scene sceneID="Fjn-xh-bu8">
             <objects>
                 <tableViewController id="DRE-yB-DJv" customClass="RequestTableViewController" customModule="XbitApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0tS-LJ-XTL">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0tS-LJ-XTL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="RequestTableViewCell" rowHeight="90" id="sBf-KS-v2h" customClass="RequestTableViewCell" customModule="XbitApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="90"/>
@@ -240,6 +242,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillCellIdentifier" rowHeight="80" id="22u-wk-Msd" customClass="SkillTableViewCell" customModule="XbitApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
@@ -320,7 +323,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="384"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="david_high_resolution" translatesAutoresizingMaskIntoConstraints="NO" id="n1z-fZ-SFi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="david_high_resolution" translatesAutoresizingMaskIntoConstraints="NO" id="n1z-fZ-SFi">
                                 <rect key="frame" x="67" y="236" width="280" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="n1z-fZ-SFi" secondAttribute="height" multiplier="1:1" id="anH-uS-ipX"/>
