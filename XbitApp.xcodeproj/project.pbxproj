@@ -39,7 +39,7 @@
 		CFAA96F52426903200BDBC47 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
 		CFEA3AF4242FB15A00AECFB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CFF3FB22241CDD74005DF62C /* XbitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XbitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF3FB22241CDD74005DF62C /* Jambit Experts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jambit Experts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3FB25241CDD74005DF62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CFF3FB29241CDD74005DF62C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		CFF3FB23241CDD74005DF62C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CFF3FB22241CDD74005DF62C /* XbitApp.app */,
+				CFF3FB22241CDD74005DF62C /* Jambit Experts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 			);
 			name = XbitApp;
 			productName = XbitApp;
-			productReference = CFF3FB22241CDD74005DF62C /* XbitApp.app */;
+			productReference = CFF3FB22241CDD74005DF62C /* Jambit Experts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -445,7 +445,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "xbit-ios.XbitApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Jambit Experts";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +464,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "xbit-ios.XbitApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Jambit Experts";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
