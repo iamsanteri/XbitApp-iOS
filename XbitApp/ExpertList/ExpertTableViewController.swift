@@ -34,7 +34,6 @@ class ExpertTableViewController: UITableViewController, UINavigationControllerDe
         let emptyImage = UIImage()
         navigationController.navigationBar.backIndicatorImage = emptyImage
         navigationController.navigationBar.backIndicatorTransitionMaskImage = emptyImage
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

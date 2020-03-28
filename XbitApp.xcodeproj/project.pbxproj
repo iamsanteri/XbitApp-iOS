@@ -24,6 +24,7 @@
 		CFF3FB2D241CDD74005DF62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF3FB2B241CDD74005DF62C /* Main.storyboard */; };
 		CFF3FB2F241CDD78005DF62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF3FB2E241CDD78005DF62C /* Assets.xcassets */; };
 		CFF3FB32241CDD78005DF62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF3FB30241CDD78005DF62C /* LaunchScreen.storyboard */; };
+		D5DB1C15DAF879C0535F3E03 /* Pods_XbitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AAE450FCBDC1148C0FAB23 /* Pods_XbitApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,9 @@
 		CFF3FB2E241CDD78005DF62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFF3FB31241CDD78005DF62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFF3FB33241CDD78005DF62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5AAE450FCBDC1148C0FAB23 /* Pods_XbitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XbitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7EA27642FAFCF1E570E068 /* Pods-XbitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XbitApp.release.xcconfig"; path = "Target Support Files/Pods-XbitApp/Pods-XbitApp.release.xcconfig"; sourceTree = "<group>"; };
+		FEF602F75FBECEDB2B6B930C /* Pods-XbitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XbitApp.debug.xcconfig"; path = "Target Support Files/Pods-XbitApp/Pods-XbitApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DB1C15DAF879C0535F3E03 /* Pods_XbitApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +101,24 @@
 			path = SkillList;
 			sourceTree = "<group>";
 		};
+		53FAB05E8EF3E5CE0511E6DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5AAE450FCBDC1148C0FAB23 /* Pods_XbitApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A538FAC6CBF12EA529466A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEF602F75FBECEDB2B6B930C /* Pods-XbitApp.debug.xcconfig */,
+				EC7EA27642FAFCF1E570E068 /* Pods-XbitApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CFAB3CAD24268563007B6A96 /* RequestList */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +133,8 @@
 			children = (
 				CFF3FB24241CDD74005DF62C /* XbitApp */,
 				CFF3FB23241CDD74005DF62C /* Products */,
+				8A538FAC6CBF12EA529466A0 /* Pods */,
+				53FAB05E8EF3E5CE0511E6DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFF3FB36241CDD78005DF62C /* Build configuration list for PBXNativeTarget "XbitApp" */;
 			buildPhases = (
+				147FD5EB91B07D5470770B2E /* [CP] Check Pods Manifest.lock */,
 				CFF3FB1E241CDD74005DF62C /* Sources */,
 				CFF3FB1F241CDD74005DF62C /* Frameworks */,
 				CFF3FB20241CDD74005DF62C /* Resources */,
+				321104B67BBB6D602F70FBC0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		147FD5EB91B07D5470770B2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XbitApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		321104B67BBB6D602F70FBC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XbitApp/Pods-XbitApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XbitApp/Pods-XbitApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XbitApp/Pods-XbitApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFF3FB1E241CDD74005DF62C /* Sources */ = {
@@ -366,6 +435,7 @@
 		};
 		CFF3FB37241CDD78005DF62C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF602F75FBECEDB2B6B930C /* Pods-XbitApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +454,7 @@
 		};
 		CFF3FB38241CDD78005DF62C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7EA27642FAFCF1E570E068 /* Pods-XbitApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
