@@ -14,10 +14,10 @@
 		037DB1F5241D2BED0095F339 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F4241D2BED0095F339 /* Skill.swift */; };
 		03959F4F24265BA200CC8D98 /* SkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */; };
 		03959F5124265BC900CC8D98 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */; };
-		0396E324242F933C00CFE9D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0396E323242F933C00CFE9D0 /* GoogleService-Info.plist */; };
 		CFAA96F424268F5500BDBC47 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */; };
 		CFAA96F62426903200BDBC47 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F52426903200BDBC47 /* Request.swift */; };
 		CFAB3CAF2426875D007B6A96 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */; };
+		CFEA3AF5242FB15A00AECFB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFEA3AF4242FB15A00AECFB9 /* GoogleService-Info.plist */; };
 		CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB25241CDD74005DF62C /* AppDelegate.swift */; };
 		CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */; };
 		CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3FB29241CDD74005DF62C /* DetailViewController.swift */; };
@@ -35,10 +35,10 @@
 		037DB1F4241D2BED0095F339 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewController.swift; sourceTree = "<group>"; };
 		03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
-		0396E323242F933C00CFE9D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		CFAA96F52426903200BDBC47 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		CFEA3AF4242FB15A00AECFB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CFF3FB22241CDD74005DF62C /* XbitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XbitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3FB25241CDD74005DF62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,9 +156,9 @@
 				CFF3FB25241CDD74005DF62C /* AppDelegate.swift */,
 				CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */,
 				CFF3FB2B241CDD74005DF62C /* Main.storyboard */,
+				CFEA3AF4242FB15A00AECFB9 /* GoogleService-Info.plist */,
 				CFF3FB2E241CDD78005DF62C /* Assets.xcassets */,
 				CFF3FB30241CDD78005DF62C /* LaunchScreen.storyboard */,
-				0396E323242F933C00CFE9D0 /* GoogleService-Info.plist */,
 				CFF3FB33241CDD78005DF62C /* Info.plist */,
 			);
 			path = XbitApp;
@@ -225,7 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF3FB32241CDD78005DF62C /* LaunchScreen.storyboard in Resources */,
-				0396E324242F933C00CFE9D0 /* GoogleService-Info.plist in Resources */,
+				CFEA3AF5242FB15A00AECFB9 /* GoogleService-Info.plist in Resources */,
 				CFF3FB2F241CDD78005DF62C /* Assets.xcassets in Resources */,
 				CFF3FB2D241CDD74005DF62C /* Main.storyboard in Resources */,
 			);
