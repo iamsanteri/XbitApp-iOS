@@ -10,13 +10,13 @@
         <!--Experts-->
         <scene sceneID="3Cy-kv-Mjf">
             <objects>
-                <tableViewController id="6BM-K2-7aH" customClass="ExpertTableViewController" customModule="XbitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="6BM-K2-7aH" customClass="ExpertTableViewController" customModule="Jambit_Experts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p3o-cR-37u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ExpertCellIdentifier" rowHeight="95" id="0y5-eF-1BX" customClass="ExpertTableViewCell" customModule="XbitApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ExpertCellIdentifier" rowHeight="95" id="0y5-eF-1BX" customClass="ExpertTableViewCell" customModule="Jambit_Experts" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0y5-eF-1BX" id="IM2-yv-60P">
@@ -168,14 +168,14 @@
         <!--Request Table View Controller-->
         <scene sceneID="Fjn-xh-bu8">
             <objects>
-                <tableViewController id="DRE-yB-DJv" customClass="RequestTableViewController" customModule="XbitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="DRE-yB-DJv" customClass="RequestTableViewController" customModule="Jambit_Experts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0tS-LJ-XTL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="RequestTableViewCell" rowHeight="90" id="sBf-KS-v2h" customClass="RequestTableViewCell" customModule="XbitApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="RequestTableViewCell" rowHeight="90" id="sBf-KS-v2h" customClass="RequestTableViewCell" customModule="Jambit_Experts" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sBf-KS-v2h" id="SIC-Ym-sdT">
@@ -237,14 +237,14 @@
         <!--Skill Table View Controller-->
         <scene sceneID="nMx-pP-Wix">
             <objects>
-                <tableViewController id="l97-L2-77b" customClass="SkillTableViewController" customModule="XbitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="l97-L2-77b" customClass="SkillTableViewController" customModule="Jambit_Experts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="B3M-YW-Jzk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillCellIdentifier" rowHeight="80" id="22u-wk-Msd" customClass="SkillTableViewCell" customModule="XbitApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillCellIdentifier" rowHeight="80" id="22u-wk-Msd" customClass="SkillTableViewCell" customModule="Jambit_Experts" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="22u-wk-Msd" id="6nI-cM-2CK">
@@ -314,7 +314,7 @@
         <!--Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DetailViewController" customModule="XbitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="DetailViewController" customModule="Jambit_Experts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -393,7 +393,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="mQo-Aq-aU3">
                                 <rect key="frame" x="271" y="672" width="120" height="84"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzM-Fy-Wb6" customClass="RatingView" customModule="XbitApp" customModuleProvider="target">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzM-Fy-Wb6" customClass="RatingView" customModule="Jambit_Experts" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="24"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rating">
@@ -401,10 +401,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOD-Id-T2T" customClass="RatingView" customModule="XbitApp" customModuleProvider="target">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOD-Id-T2T" customClass="RatingView" customModule="Jambit_Experts" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="30" width="120" height="24"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Sx-GN-Alf" customClass="RatingView" customModule="XbitApp" customModuleProvider="target">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Sx-GN-Alf" customClass="RatingView" customModule="Jambit_Experts" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="120" height="24"/>
                                     </stackView>
                                 </subviews>

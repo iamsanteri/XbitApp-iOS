@@ -57,7 +57,6 @@ class DetailViewController: UIViewController {
         setupSystemImage(image: scheduleImage)
         
         if let expert = expert {
-            print("Test")
 //            profileImage.image = expert.photo
             nameLabel.text = expert.name
             roleLabel.text = expert.role
