@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol ExpertUpdateProtocol {
+    func expertsUpdated(experts: [Expert])
+}

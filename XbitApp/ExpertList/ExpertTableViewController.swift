@@ -10,7 +10,7 @@ import UIKit
 //import FirebaseFirestore
 //import FirebaseStorage
 
-class ExpertTableViewController: UITableViewController, UINavigationControllerDelegate {
+class ExpertTableViewController: UITableViewController, UINavigationControllerDelegate, ExpertUpdateProtocol {
     
 //    let db = Firestore.firestore()
 //    let storage = Storage.storage()
@@ -74,17 +74,24 @@ class ExpertTableViewController: UITableViewController, UINavigationControllerDe
         return experts.count
     }
     
+    func expertsUpdated(experts: [Expert]) {
+        self.experts.removeAll()
+        self.experts += experts
+        self.tableView.reloadData()
+    }
+    
     private func loadSampleExperts() {
-                let david = UIImage(named: "david")
-                let daniel = UIImage(named: "daniel")
-                let max = UIImage(named: "max")
-        
-        
-                let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com", photo: david, skills: [Skill(skill: "Swift", level: 5), Skill(skill: "iOS", level: 2), Skill(skill: "Scrum", level: 3)], role: "Architect")
-        
-                let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com", photo: daniel, skills: [], role: nil)
-        
-                let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com", photo: max, skills: [], role: nil)
+        FirebaseConnection.setupExpertProtocol(expertUpdatedProtocol: self)
+//                let david = UIImage(named: "david")
+//                let daniel = UIImage(named: "daniel")
+//                let max = UIImage(named: "max")
+//
+//
+//                let expert1 = Expert(name: "David Symhoven", phoneNumber: "563", email: "david.symhoven@jambit.com", photo: david, skills: [Skill(skill: "Swift", level: 5), Skill(skill: "iOS", level: 2), Skill(skill: "Scrum", level: 3)], role: "Architect")
+//
+//                let expert2 = Expert(name: "Daniel Benkmann", phoneNumber: "123", email: "daniel.benkmann@jambit.com", photo: daniel, skills: [], role: nil)
+//
+//                let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com", photo: max, skills: [], role: nil)
         
 //        db.collection("experts").addSnapshotListener { (querySnapshot, err) in
 //            if let err = err {
@@ -113,7 +120,7 @@ class ExpertTableViewController: UITableViewController, UINavigationControllerDe
 //                }
 //            }
 //        }
-                experts += [expert1, expert2, expert3]
+//                experts += [expert1, expert2, expert3]
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

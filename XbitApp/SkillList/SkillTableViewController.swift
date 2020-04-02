@@ -35,14 +35,15 @@ class SkillTableViewController: UITableViewController, SkillUpdateProtocol {
         return skills.count
     }
     
-    func skillsUpdated(skill: Skill) {
-        self.skills.append(skill)
+    func skillsUpdated(skills: [Skill]) {
+        self.skills.removeAll()
+        self.skills += skills
         self.tableView.reloadData()
     }
     
     func loadSampleSkills() {
         
-        FirebaseConnection.setupSkillProtocol(skillUpdateProtocol: self)
+        FirebaseConnection.setupSkillProtocol(skillUpdatedProtocol: self)
         
 //                let skill1 = Skill(skill: "Swift", image: #imageLiteral(resourceName: "swift"))
 //                let skill2 = Skill(skill: "Java", image: #imageLiteral(resourceName: "java"))

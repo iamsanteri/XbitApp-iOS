@@ -9,5 +9,5 @@
 import Foundation
 
 protocol SkillUpdateProtocol {
-    func skillsUpdated(skill: Skill)
+    func skillsUpdated(skills: [Skill])
 }
