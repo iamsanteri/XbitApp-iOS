@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		034BC08F242A0B7C00F6D62E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BC08E242A0B7C00F6D62E /* RatingView.swift */; };
+		035FD1FF243639A2009E7E9F /* FirebaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FD1FE243639A2009E7E9F /* FirebaseConnection.swift */; };
+		035FD20124363D82009E7E9F /* ExpertUpdateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FD20024363D82009E7E9F /* ExpertUpdateProtocol.swift */; };
+		035FD20324363D91009E7E9F /* SkillUpdateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FD20224363D91009E7E9F /* SkillUpdateProtocol.swift */; };
 		03735EDF243091A8002E57A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03735EDE243091A8002E57A6 /* GoogleService-Info.plist */; };
 		037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */; };
 		037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		034BC08E242A0B7C00F6D62E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		035FD1FE243639A2009E7E9F /* FirebaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConnection.swift; sourceTree = "<group>"; };
+		035FD20024363D82009E7E9F /* ExpertUpdateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertUpdateProtocol.swift; sourceTree = "<group>"; };
+		035FD20224363D91009E7E9F /* SkillUpdateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillUpdateProtocol.swift; sourceTree = "<group>"; };
 		03735EDE243091A8002E57A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewCell.swift; sourceTree = "<group>"; };
 		037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035FD1FD2436394D009E7E9F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				035FD1FE243639A2009E7E9F /* FirebaseConnection.swift */,
+				035FD20024363D82009E7E9F /* ExpertUpdateProtocol.swift */,
+				035FD20224363D91009E7E9F /* SkillUpdateProtocol.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		037DB1F0241CF5B40095F339 /* ExpertList */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +164,7 @@
 		CFF3FB24241CDD74005DF62C /* XbitApp */ = {
 			isa = PBXGroup;
 			children = (
+				035FD1FD2436394D009E7E9F /* Firebase */,
 				CFAB3CAD24268563007B6A96 /* RequestList */,
 				03959F4D24265B5F00CC8D98 /* SkillList */,
 				037DB1F6241D2DF40095F339 /* DetailView */,
@@ -175,7 +192,7 @@
 				CFF3FB1E241CDD74005DF62C /* Sources */,
 				CFF3FB1F241CDD74005DF62C /* Frameworks */,
 				CFF3FB20241CDD74005DF62C /* Resources */,
-				321104B67BBB6D602F70FBC0 /* [CP] Embed Pods Frameworks */,
+				A23F471DA085622286AAFBAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,7 +273,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		321104B67BBB6D602F70FBC0 /* [CP] Embed Pods Frameworks */ = {
+		A23F471DA085622286AAFBAC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,13 +302,16 @@
 				CFF3FB2A241CDD74005DF62C /* DetailViewController.swift in Sources */,
 				CFF3FB26241CDD74005DF62C /* AppDelegate.swift in Sources */,
 				CFAA96F424268F5500BDBC47 /* RequestTableViewController.swift in Sources */,
+				035FD20124363D82009E7E9F /* ExpertUpdateProtocol.swift in Sources */,
 				034BC08F242A0B7C00F6D62E /* RatingView.swift in Sources */,
 				CFF3FB28241CDD74005DF62C /* SceneDelegate.swift in Sources */,
+				035FD20324363D91009E7E9F /* SkillUpdateProtocol.swift in Sources */,
 				037DB1F2241D081A0095F339 /* Expert.swift in Sources */,
 				CFAA96F62426903200BDBC47 /* Request.swift in Sources */,
 				037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */,
 				03959F5124265BC900CC8D98 /* SkillTableViewCell.swift in Sources */,
 				037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */,
+				035FD1FF243639A2009E7E9F /* FirebaseConnection.swift in Sources */,
 				03959F4F24265BA200CC8D98 /* SkillTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

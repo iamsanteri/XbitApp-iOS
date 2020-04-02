@@ -10,10 +10,10 @@ import UIKit
 import FirebaseFirestore
 import FirebaseStorage
 
-class SkillTableViewController: UITableViewController {
+class SkillTableViewController: UITableViewController, SkillUpdateProtocol {
     
-    let db = Firestore.firestore()
-    let storage = Storage.storage()
+//    let db = Firestore.firestore()
+//    let storage = Storage.storage()
     
     var skills = [Skill]()
     
@@ -35,41 +35,48 @@ class SkillTableViewController: UITableViewController {
         return skills.count
     }
     
+    func skillsUpdated(skill: Skill) {
+        self.skills.append(skill)
+        self.tableView.reloadData()
+    }
+    
     func loadSampleSkills() {
         
-        //        let skill1 = Skill(skill: "Swift", image: #imageLiteral(resourceName: "swift"))
-        //        let skill2 = Skill(skill: "Java", image: #imageLiteral(resourceName: "java"))
-        //        let skill3 = Skill(skill: "iOS", image: #imageLiteral(resourceName: "iOS"))
-        //        let skill4 = Skill(skill: "Android", image: #imageLiteral(resourceName: "android"))
+        FirebaseConnection.setupSkillProtocol(skillUpdateProtocol: self)
         
-        //        skills += [skill1, skill2, skill3, skill4]
+//                let skill1 = Skill(skill: "Swift", image: #imageLiteral(resourceName: "swift"))
+//                let skill2 = Skill(skill: "Java", image: #imageLiteral(resourceName: "java"))
+//                let skill3 = Skill(skill: "iOS", image: #imageLiteral(resourceName: "iOS"))
+//                let skill4 = Skill(skill: "Android", image: #imageLiteral(resourceName: "android"))
+//
+//                skills += [skill1, skill2, skill3, skill4]
         
-        db.collection("skills").addSnapshotListener { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                self.skills.removeAll()
-                for document in querySnapshot!.documents {
-                    let storageRef = self.storage.reference()
-                    
-                    let imageRef = storageRef.child(document.data()["skill_image_name"] as! String)
-                    
-                    imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
-                        if let error = error {
-                            print(error)
-                        } else {
-                            // Data for "images/island.jpg" is returned
-                            let image = UIImage(data: data!)
-                        
-                            let skill = Skill(skill: document.data()["skill_name"] as! String, image: image)
-                            
-                            self.skills.append(skill)
-                            self.tableView.reloadData()
-                        }
-                    }
-                }
-            }
-        }
+//        db.collection("skills").addSnapshotListener { (querySnapshot, err) in
+//            if let err = err {
+//                print("Error getting documents: \(err)")
+//            } else {
+//                self.skills.removeAll()
+//                for document in querySnapshot!.documents {
+//                    let storageRef = self.storage.reference()
+//
+//                    let imageRef = storageRef.child(document.data()["skill_image_name"] as! String)
+//
+//                    imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
+//                        if let error = error {
+//                            print(error)
+//                        } else {
+//                            // Data for "images/island.jpg" is returned
+//                            let image = UIImage(data: data!)
+//
+//                            let skill = Skill(skill: document.data()["skill_name"] as! String, image: image)
+//
+//                            self.skills.append(skill)
+//                            self.tableView.reloadData()
+//                        }
+//                    }
+//                }
+//            }
+//        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -1,0 +1,13 @@
+//
+//  SkillUpdateProtocol.swift
+//  XbitApp
+//
+//  Created by Erik Kellenter on 02.04.20.
+//  Copyright © 2020 xbit-ios. All rights reserved.
+//
+
+import Foundation
+
+protocol SkillUpdateProtocol {
+    func skillsUpdated(skill: Skill)
+}

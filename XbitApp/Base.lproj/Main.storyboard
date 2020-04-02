@@ -81,7 +81,6 @@
                                         <constraint firstItem="UMS-Mk-ioC" firstAttribute="top" secondItem="IM2-yv-60P" secondAttribute="top" constant="15" id="cWx-Iv-r03"/>
                                         <constraint firstAttribute="trailing" secondItem="fmI-nP-pY9" secondAttribute="trailing" id="gB1-9Q-JKZ"/>
                                         <constraint firstItem="os4-0P-cPy" firstAttribute="leading" secondItem="fDJ-m3-cLT" secondAttribute="trailing" constant="10" id="i8C-os-ni7"/>
-                                        <constraint firstAttribute="bottom" secondItem="fDJ-m3-cLT" secondAttribute="bottom" constant="10" id="iGD-XJ-cXZ"/>
                                         <constraint firstAttribute="trailing" secondItem="Bi5-qT-38K" secondAttribute="trailing" id="ovk-ky-xpG"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -269,7 +268,6 @@
                                         <constraint firstAttribute="trailing" secondItem="wUv-Uv-1f8" secondAttribute="trailing" constant="15" id="CJd-ZV-MS0"/>
                                         <constraint firstItem="3Uq-rC-Cvo" firstAttribute="top" secondItem="6nI-cM-2CK" secondAttribute="top" constant="10" id="DWC-68-4bF"/>
                                         <constraint firstItem="wUv-Uv-1f8" firstAttribute="top" secondItem="6nI-cM-2CK" secondAttribute="top" constant="27" id="GI4-jl-rZl"/>
-                                        <constraint firstAttribute="bottom" secondItem="3Uq-rC-Cvo" secondAttribute="bottom" constant="10" id="YiO-RT-m0l"/>
                                         <constraint firstAttribute="bottom" secondItem="wUv-Uv-1f8" secondAttribute="bottom" constant="26" id="esw-zj-eRJ"/>
                                         <constraint firstItem="wUv-Uv-1f8" firstAttribute="leading" secondItem="3Uq-rC-Cvo" secondAttribute="trailing" constant="15" id="evE-6C-iwd"/>
                                         <constraint firstItem="3Uq-rC-Cvo" firstAttribute="leading" secondItem="6nI-cM-2CK" secondAttribute="leading" constant="15" id="nTo-Yg-5cB"/>
