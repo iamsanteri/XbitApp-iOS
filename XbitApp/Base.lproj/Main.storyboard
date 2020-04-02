@@ -81,7 +81,6 @@
                                         <constraint firstItem="UMS-Mk-ioC" firstAttribute="top" secondItem="IM2-yv-60P" secondAttribute="top" constant="15" id="cWx-Iv-r03"/>
                                         <constraint firstAttribute="trailing" secondItem="fmI-nP-pY9" secondAttribute="trailing" id="gB1-9Q-JKZ"/>
                                         <constraint firstItem="os4-0P-cPy" firstAttribute="leading" secondItem="fDJ-m3-cLT" secondAttribute="trailing" constant="10" id="i8C-os-ni7"/>
-                                        <constraint firstAttribute="bottom" secondItem="fDJ-m3-cLT" secondAttribute="bottom" constant="10" id="iGD-XJ-cXZ"/>
                                         <constraint firstAttribute="trailing" secondItem="Bi5-qT-38K" secondAttribute="trailing" id="ovk-ky-xpG"/>
                                     </constraints>
                                 </tableViewCellContentView>

@@ -86,33 +86,33 @@ class ExpertTableViewController: UITableViewController, UINavigationControllerDe
         //
         //        let expert3 = Expert(name: "Max Mustermann", phoneNumber: "666", email: "max.mustermann@jambit.com", photo: max, skills: [], role: nil)
         
-        db.collection("experts").addSnapshotListener { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                self.experts.removeAll()
-                for document in querySnapshot!.documents {
-                    
-                    let storageRef = self.storage.reference()
-                    
-                    let imageRef = storageRef.child(document.data()["thumbnail_name"] as! String)
-                    
-                    imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
-                        if let error = error {
-                            print(error)
-                        } else {
-                            // Data for "images/island.jpg" is returned
-                            let image = UIImage(data: data!)
-                            
-                            let expert = Expert(name: document.data()["name"] as! String, phoneNumber: document.data()["phone"] as! String, email: document.data()["email"] as! String, photo: image, skills: [Skill(skill: "Swift", level: 5), Skill(skill: "iOS", level: 2), Skill(skill: "Scrum", level: 3)], role: document.data()["role"] as! String)
-                            
-                            self.experts.append(expert)
-                            self.tableView.reloadData()
-                        }
-                    }
-                }
-            }
-        }
+//        db.collection("experts").addSnapshotListener { (querySnapshot, err) in
+//            if let err = err {
+//                print("Error getting documents: \(err)")
+//            } else {
+//                self.experts.removeAll()
+//                for document in querySnapshot!.documents {
+//
+//                    let storageRef = self.storage.reference()
+//
+//                    let imageRef = storageRef.child(document.data()["thumbnail_name"] as! String)
+//
+//                    imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
+//                        if let error = error {
+//                            print(error)
+//                        } else {
+//                            // Data for "images/island.jpg" is returned
+//                            let image = UIImage(data: data!)
+//
+//                            let expert = Expert(name: document.data()["name"] as! String, phoneNumber: document.data()["phone"] as! String, email: document.data()["email"] as! String, photo: image, skills: [Skill(skill: "Swift", level: 5), Skill(skill: "iOS", level: 2), Skill(skill: "Scrum", level: 3)], role: document.data()["role"] as! String)
+//
+//                            self.experts.append(expert)
+//                            self.tableView.reloadData()
+//                        }
+//                    }
+//                }
+//            }
+//        }
         //        experts += [expert1, expert2, expert3]
     }
     
