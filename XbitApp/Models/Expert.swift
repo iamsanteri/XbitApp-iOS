@@ -16,14 +16,16 @@ class Expert {
     var thumbnailPath: String
     var skills: [Skill]?
     var role: String?
+    var highResImagePath: String
     
-    init(name: String, phoneNumber: String, email: String, thumbnailPath: String, skills: [Skill]?, role: String?) {
+    init(name: String, phoneNumber: String, email: String, thumbnailPath: String, skills: [Skill]?, role: String?, highResImagePath: String) {
         self.name = name
         self.phoneNumber = phoneNumber
         self.email = email
         self.thumbnailPath = thumbnailPath
         self.skills = skills
         self.role = role
+        self.highResImagePath = highResImagePath
     }
     
     init(firestoreData: [String : Any]) {
@@ -31,6 +33,7 @@ class Expert {
         self.phoneNumber = firestoreData["phone"] as! String
         self.email = firestoreData["email"] as! String
         self.thumbnailPath = firestoreData["thumbnail_name"] as! String
+        self.highResImagePath = firestoreData["high_res_image_name"] as! String
         self.skills = convertFirestoreSkillData(firebaseSkillData: firestoreData["skill_list"]!)
         
     }

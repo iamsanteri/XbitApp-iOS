@@ -11,13 +11,13 @@
 		035FD1FF243639A2009E7E9F /* FirebaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FD1FE243639A2009E7E9F /* FirebaseConnection.swift */; };
 		035FD20124363D82009E7E9F /* ExpertUpdateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FD20024363D82009E7E9F /* ExpertUpdateProtocol.swift */; };
 		035FD20324363D91009E7E9F /* SkillUpdateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035FD20224363D91009E7E9F /* SkillUpdateProtocol.swift */; };
-		03735EDF243091A8002E57A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03735EDE243091A8002E57A6 /* GoogleService-Info.plist */; };
 		037DB1ED241CF31C0095F339 /* ExpertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */; };
 		037DB1EF241CF5440095F339 /* ExpertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */; };
 		037DB1F2241D081A0095F339 /* Expert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F1241D081A0095F339 /* Expert.swift */; };
 		037DB1F5241D2BED0095F339 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DB1F4241D2BED0095F339 /* Skill.swift */; };
 		03959F4F24265BA200CC8D98 /* SkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */; };
 		03959F5124265BC900CC8D98 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */; };
+		CF7220FB2438B094003D7CCD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF7220FA2438B094003D7CCD /* GoogleService-Info.plist */; };
 		CFAA96F424268F5500BDBC47 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */; };
 		CFAA96F62426903200BDBC47 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA96F52426903200BDBC47 /* Request.swift */; };
 		CFAB3CAF2426875D007B6A96 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */; };
@@ -35,13 +35,13 @@
 		035FD1FE243639A2009E7E9F /* FirebaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConnection.swift; sourceTree = "<group>"; };
 		035FD20024363D82009E7E9F /* ExpertUpdateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertUpdateProtocol.swift; sourceTree = "<group>"; };
 		035FD20224363D91009E7E9F /* SkillUpdateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillUpdateProtocol.swift; sourceTree = "<group>"; };
-		03735EDE243091A8002E57A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		037DB1EC241CF31C0095F339 /* ExpertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewCell.swift; sourceTree = "<group>"; };
 		037DB1EE241CF5440095F339 /* ExpertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertTableViewController.swift; sourceTree = "<group>"; };
 		037DB1F1241D081A0095F339 /* Expert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expert.swift; sourceTree = "<group>"; };
 		037DB1F4241D2BED0095F339 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		03959F4E24265BA200CC8D98 /* SkillTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewController.swift; sourceTree = "<group>"; };
 		03959F5024265BC900CC8D98 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
+		CF7220FA2438B094003D7CCD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CFAA96F324268F5500BDBC47 /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		CFAA96F52426903200BDBC47 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CFAB3CAE2426875D007B6A96 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
@@ -172,10 +172,10 @@
 				037DB1F0241CF5B40095F339 /* ExpertList */,
 				CFF3FB25241CDD74005DF62C /* AppDelegate.swift */,
 				CFF3FB27241CDD74005DF62C /* SceneDelegate.swift */,
+				CF7220FA2438B094003D7CCD /* GoogleService-Info.plist */,
 				CFF3FB2B241CDD74005DF62C /* Main.storyboard */,
 				CFF3FB2E241CDD78005DF62C /* Assets.xcassets */,
 				CFF3FB30241CDD78005DF62C /* LaunchScreen.storyboard */,
-				03735EDE243091A8002E57A6 /* GoogleService-Info.plist */,
 				CFF3FB33241CDD78005DF62C /* Info.plist */,
 			);
 			path = XbitApp;
@@ -242,7 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF3FB32241CDD78005DF62C /* LaunchScreen.storyboard in Resources */,
-				03735EDF243091A8002E57A6 /* GoogleService-Info.plist in Resources */,
+				CF7220FB2438B094003D7CCD /* GoogleService-Info.plist in Resources */,
 				CFF3FB2F241CDD78005DF62C /* Assets.xcassets in Resources */,
 				CFF3FB2D241CDD74005DF62C /* Main.storyboard in Resources */,
 			);

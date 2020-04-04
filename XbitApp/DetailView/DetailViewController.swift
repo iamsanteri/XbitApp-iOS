@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class DetailViewController: UIViewController {
     
@@ -57,7 +58,7 @@ class DetailViewController: UIViewController {
         setupSystemImage(image: scheduleImage)
         
         if let expert = expert {
-//            profileImage.image = expert.photo
+            fetchProfileImage(highResImageName: expert.highResImagePath)
             nameLabel.text = expert.name
             roleLabel.text = expert.role
             phoneLabel.text = expert.phoneNumber
@@ -129,6 +130,17 @@ class DetailViewController: UIViewController {
         image.layer.cornerRadius  = image.frame.size.height / 2
         image.layer.borderWidth = CGFloat(circleBorder)
         image.layer.borderColor = UIColor.systemOrange.cgColor
+    }
+    
+    func fetchProfileImage(highResImageName: String) {
+        let storage = Storage.storage()
+        storage.reference().child(highResImageName).getData(maxSize: 1 * 1024 * 1024) { data, error in
+            if let error = error {
+                print(error)
+            } else {
+                self.profileImage.image = UIImage(data: data!)
+            }
+        }
     }
 }
 
