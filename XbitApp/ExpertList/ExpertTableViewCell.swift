@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class ExpertTableViewCell: UITableViewCell {
     
@@ -39,8 +40,22 @@ class ExpertTableViewCell: UITableViewCell {
         nameLabel.text = expert.name
         phoneNumberLabel.text = expert.phoneNumber
         emailLabel.text = expert.email
-        photoImageView.image = expert.photo
+        photoImageView.load(thumbnailPath: expert.thumbnailPath)
         self.selectionStyle = .none
     }
     
+}
+
+extension UIImageView {
+    func load(thumbnailPath: String) {
+        Storage.storage().reference().child(thumbnailPath).getData(maxSize: 1 * 1024 * 1024) { data, error in
+            if let error = error {
+                print("Error loading images \(error)")
+            } else {
+                // Data for "images/island.jpg" is returned
+                let image = UIImage(data: data!)
+                self.image = image
+            }
+        }
+    }
 }

@@ -70,37 +70,40 @@ struct FirebaseConnection {
                 var experts = [Expert]()
                 for document in querySnapshot.documents {
                                         
-                    let storageRef = storage.reference()
+                    experts.append(Expert(firestoreData: document.data()))
                     
-                    guard let thumbnail_name = document.data()["thumbnail_name"] else {
-                        break
-                    }
-                    
-                    let imageRef = storageRef.child(document.data()["thumbnail_name"] as! String)
-                    
-                    imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
-                        if let error = error {
-                            print("Error loading images \(error)")
-                        } else {
-                            // Data for "images/island.jpg" is returned
-                            let image = UIImage(data: data!)
-                                                                        
-                            let expert = Expert(name: document.data()["name"] as! String,
-                                                phoneNumber: document.data()["phone"] as! String,
-                                                email: document.data()["email"] as! String,
-                                                photo: image,
-                                                skills: [Skill(skill: "Swift", level: 5),
-                                                         Skill(skill: "iOS", level: 2),
-                                                         Skill(skill: "Scrum", level: 3)],
-                                                role: document.data()["role"] as! String)
-                            experts.append(expert)
-                                                        
-                            if experts.count == querySnapshot.documents.count {
-                                expertUpdatedProtocol.expertsUpdated(experts: experts)
-                            }
-                        }
-                    }
+//                    let storageRef = storage.reference()
+//
+//                    guard let thumbnail_name = document.data()["thumbnail_name"] else {
+//                        break
+//                    }
+//
+//                    let imageRef = storageRef.child(document.data()["thumbnail_name"] as! String)
+//
+//                    imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
+//                        if let error = error {
+//                            print("Error loading images \(error)")
+//                        } else {
+//                            // Data for "images/island.jpg" is returned
+//                            let image = UIImage(data: data!)
+//
+//                            let expert = Expert(name: document.data()["name"] as! String,
+//                                                phoneNumber: document.data()["phone"] as! String,
+//                                                email: document.data()["email"] as! String,
+//                                                photo: image,
+//                                                skills: [Skill(skill: "Swift", level: 5),
+//                                                         Skill(skill: "iOS", level: 2),
+//                                                         Skill(skill: "Scrum", level: 3)],
+//                                                role: document.data()["role"] as! String)
+//                            experts.append(expert)
+//
+//                            if experts.count == querySnapshot.documents.count {
+//                                expertUpdatedProtocol.expertsUpdated(experts: experts)
+//                            }
+//                        }
+//                    }
                 }
+                expertUpdatedProtocol.expertsUpdated(experts: experts)
             }
         }
     }
